@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { environment } from '@environments/environment';
 
 @Component({
   selector: 'side-menu-header',
@@ -7,4 +8,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './menu-header.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MenuHeaderComponent {}
+export class MenuHeaderComponent {
+  envs = environment;
+}
