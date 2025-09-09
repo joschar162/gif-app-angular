@@ -1,6 +1,7 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { MenuHeaderComponent } from './menu-header/menu-header.component';
 import { MenuOptionsComponent } from './menu-options/menu-options.component';
+import { GifsService } from '../../services/gifs.service';
 
 @Component({
   selector: 'side-menu',
